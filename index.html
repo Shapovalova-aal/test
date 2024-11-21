@@ -38,11 +38,20 @@
 	g = log --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'
 	br = branch
 	co = checkout
-   
+
+   git checkout -- .  отменить изменения (отеатиться к чистому комиту)
+   git reset index.html извлечь из промежуточной зоны в зону изменения 
+   git reset --hard HEAD^1   отменить на 1 коммит назад (жестко удаляет комит) 
+   git reset --soft HEAD^1  отменить комит, изменения перенести в зону промежуточных изменений 
+
      -->
-   <p></p>
+
    <div>hello</div>
    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, culpa?</p>
+   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae dolore enim quisquam vitae corporis similique
+      repellendus, veritatis alias totam nobis, iusto perspiciatis, amet id placeat commodi praesentium excepturi aut
+      assumenda.</p>
+
 </body>
 
 </html>
